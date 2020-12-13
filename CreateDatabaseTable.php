@@ -29,28 +29,12 @@ if ($conn->query($users) === TRUE) {
     echo "\n";
 }
 
-
- 
-
-// sql to create artist table
-$artist = "CREATE TABLE Artists (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    artistName VARCHAR(30) NOT NULL
-)";
-
-if ($conn->query($artist) === TRUE) {
-    echo "Artists Table Successfully Created";
-    echo "\n";
-} else {
-    echo "Error creating table: " . $conn->error;
-    echo "\n";
-}
-
-
 // sql to create album table
 $album = "CREATE TABLE Albums (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    artistName VARCHAR(30) NOT NULL,
     albumName VARCHAR(30) NOT NULL,
+    albumYear INT(4) NOT NULL
     )";
 
 if ($conn->query($album) === TRUE) {

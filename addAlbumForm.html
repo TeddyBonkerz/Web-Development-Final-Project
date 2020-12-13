@@ -23,8 +23,14 @@
         <h1>Add an Album</h1>
         <form action="addAlbumForm.php" method="post">
             <div class="form-group">
+                <label>Artist Name: </label>
+                <input type="text" name="artist_name" id="artistname" required>
+                <br>
                 <label>Album Name: </label>
                 <input type="text" name="album_name" id="albumname" required>
+                <br>
+                <label>Year: </label>
+                <input type="text" name="year" id="year" required>
             </div>
 
             <input type="submit" class="submit-button" value="Submit">
