@@ -38,7 +38,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
    <div class="content">
       <h3> Which task would you like to perform ? </h3>
       <ul class="task-list">
-         <li><a href="./addArtistForm.php">Add an artist</a></li>
+         <li><a href="./addArtistForm.html">Add an artist</a></li>
          <li><a href="./addAlbumForm.php">Add and Album</a></li>
          <li><a href="./searchDataBase.php">Search for Artist or Album</a></li>
       </ul>

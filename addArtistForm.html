@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artist</title>
+
+    <style type="text/css">
+        body {
+            font: 14px sans-serif;
+        }
+        
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Add an Artist</h1>
+        <form action="addArtistForm.php" method="post">
+            <div class="form-group">
+                <label>Artist Name</label>
+                <input type="text" name="artist_name" id="artistname" required>
+            </div>
+
+            <input type="submit" class="submit-button" value="Submit">
+
+            <p><a href="./homepage.php">Return to Homepage</a>.</p>
+        </form>
+    </div>
+</body>
+
+</html>
