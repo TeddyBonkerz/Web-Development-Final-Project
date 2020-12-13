@@ -26,16 +26,18 @@
 
                 <label for="filter">
                     <select name="filter" id="filter">
+                        <option value="" disabled selected>Choose option</option>
                         <option value="artist_name">Search by Name</option>
                         <option value="album_name">Search by Album</option>
                         <option value="year">Search by Year</option>
+                        <option value="show_all">Show All</option>
                     </select>
                 </label>
 
-                <input type="text" name="searchId" id="searchId" required>
+                <input type="text" name="searchId" id="searchId">
             </div>
 
-            <input type="submit" class="submit-button" value="Submit">
+            <input type="submit" class="search" value="Submit">
 
             <p><a href="./homepage.php">Return to Homepage</a>.</p>
         </form>
