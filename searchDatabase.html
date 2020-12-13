@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+
+    <style type="text/css">
+        body {
+            font: 14px sans-serif;
+        }
+        
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Search Database</h1>
+        <form action="searchDatabase.php" method="post">
+            <div class="form-group">
+
+                <label for="filter">
+                    <select name="filter" id="filter">
+                        <option value="artist_name">Search by Name</option>
+                        <option value="album_name">Search by Album</option>
+                        <option value="year">Search by Year</option>
+                    </select>
+                </label>
+
+                <input type="text" name="searchId" id="searchId" required>
+            </div>
+
+            <input type="submit" class="submit-button" value="Submit">
+
+            <p><a href="./homepage.php">Return to Homepage</a>.</p>
+        </form>
+    </div>
+</body>
+
+</html>
