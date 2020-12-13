@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: ./welcome.php");
+    header("location: ./homepage.php");
     exit;
 }
 
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
-                            header("location: ./welcome.php");
+                            header("location: ./homepage.php");
                         } else {
 
                             $password_err = "The password you entered was not valid.";

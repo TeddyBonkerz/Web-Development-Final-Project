@@ -12,7 +12,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <head>
    <meta charset="UTF-8">
-   <title>Welcome</title>
+   <title>Home</title>
    <style type="text/css">
       body {
          font: 14px sans-serif;
