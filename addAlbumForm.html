@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Album</title>
+
+    <style type="text/css">
+        body {
+            font: 14px sans-serif;
+        }
+        
+        .wrapper {
+            width: 350px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Add an Album</h1>
+        <form action="addAlbumForm.php" method="post">
+            <div class="form-group">
+                <label>Album Name: </label>
+                <input type="text" name="album_name" id="albumname" required>
+            </div>
+
+            <input type="submit" class="submit-button" value="Submit">
+
+            <p><a href="./homepage.php">Return to Homepage</a>.</p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -51,7 +51,6 @@ if ($conn->query($artist) === TRUE) {
 $album = "CREATE TABLE Albums (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     albumName VARCHAR(30) NOT NULL,
-    artistName VARCHAR(30) NOT NULL
     )";
 
 if ($conn->query($album) === TRUE) {
